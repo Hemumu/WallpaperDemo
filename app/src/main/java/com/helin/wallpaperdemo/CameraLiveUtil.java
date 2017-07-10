@@ -226,7 +226,6 @@ public class CameraLiveUtil {
             //设置了一个具有输出Surface的CaptureRequest.Builder。
             mPreviewRequestBuilder = mCameraDevice.createCaptureRequest(CameraDevice.TEMPLATE_PREVIEW);
             Log.e(TAG,"添加mSurface");
-//            mPreviewRequestBuilder.addTarget(mSurface);
             mPreviewRequestBuilder.addTarget(mSurfaceHolder.getSurface());
             Log.e(TAG,"添加完成");
             //创建一个CameraCaptureSession来进行相机预览。
@@ -240,7 +239,6 @@ public class CameraLiveUtil {
                                 Log.e(TAG,"相机已经关闭");
                                 return;
                             }
-
                             // 会话准备好后，我们开始显示预览
                             mCaptureSession = cameraCaptureSession;
                             Log.e(TAG,"会话准备好后，我们开始显示预览");

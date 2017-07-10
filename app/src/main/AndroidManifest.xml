@@ -41,7 +41,6 @@
                 android:resource="@xml/livewallpaper" />
         </service>
 
-        <activity android:name=".CameraImageActivity" />
         <activity android:name=".Camera2Activity" />
         <activity android:name=".MyCameraActivity"></activity>
     </application>
